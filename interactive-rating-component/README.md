@@ -25,13 +25,8 @@ Users should be able to:
 
 ### Screenshots
 
-![Desktop](./screenshots/desktop-screenshot.png.jpg)
-![Mobile](./screenshots/mobile-screenshot.png.jpg)
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+![Desktop](https://raw.githubusercontent.com/Ryrilya/frontendmentor-projects/main/interactive-rating-component/screenshots/desktop-screenshot.png)
+![Mobile](https://raw.githubusercontent.com/Ryrilya/frontendmentor-projects/main/interactive-rating-component/screenshots/mobile-screenshot.png)
 
 ## My process
 
