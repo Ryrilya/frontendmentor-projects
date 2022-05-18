@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <script src="./main.js" defer></script>
+</head>
+
+<body>
+  <article class="component__container default-container">
+    <div class="component__star circle">
+      <img src="./images/icon-star.svg" alt="star icon">
+    </div>
+
+    <h3 class="component__title title">How did we do?</h3>
+    <p class="component-desc body-text">Please let us know how we did with your support request. All feedback is
+      appreciated
+      to help us improve our offering!</p>
+
+    <form class="component__form">
+      <div class="component__rating">
+        <button type="button" class="component__rating-number circle">
+          1
+        </button>
+        <button type="button" class="component__rating-number circle">
+          2
+        </button>
+        <button type="button" class="component__rating-number circle">
+          3
+        </button>
+        <button type="button" class="component__rating-number circle">
+          4
+        </button>
+        <button type="button" class="component__rating-number circle">
+          5
+        </button>
+      </div>
+
+      <button type="submit" class="component__submit-btn">
+        Submit
+      </button>
+    </form>
+  </article>
+
+  <article class="thank-you__wrapper">
+    <div class="thank-you__container default-container">
+      <header class="thank-you__illustration">
+        <img src="./images/illustration-thank-you.svg" alt="thank you illustration">
+      </header>
+
+      <div class="thank-you__selection">
+      </div>
+
+      <h3 class="thank-you__title title">
+        Thank you!
+      </h3>
+      <p class="thank-you__desc body-text">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+
+    <p class="thank-you__go-back-text">Go back</p>
+  </article>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Ryrilya/" target="_blank">@Ryrilya</a>.
+  </div>
+</body>
+
+</html>
