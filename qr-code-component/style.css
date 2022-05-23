@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+	/* Responsive */
+	--mobile: 375px;
+	--desktop: 1440px;
+
+	/* Colors */
+	--white: hsl(0, 0%, 100%);
+	--light-gray: hsl(212, 45%, 89%);
+	--grayish-blue: hsl(220, 15%, 55%);
+	--dark-blue: hsl(218, 44%, 22%);
+
+  /* Typography */
+  --body-fs: 15px;
+  --default-ff: 'Outfit', sans-serif;
+
+  /* General */
+  --default-border-radius: 1rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  font-size: var(--body-fs);
+  font-family: var(--default-ff);
+
+  background-color: var(--light-gray);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 1.5rem;
+}
+
+.qrcode-card__container {
+  background-color: var(--white);
+  padding: 1rem;
+  padding-bottom: 3rem;
+  border-radius: var(--default-border-radius);
+}
+
+.qrcode-card__container img {
+  border-radius: var(--default-border-radius);
+  width: 100%;
+  aspect-ratio: 4 / 4;
+}
+
+.qrcode-card__text {
+  text-align: center;
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.qrcode-card__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.qrcode-card__desc {
+  color: var(--grayish-blue);
+  max-width: 25ch;
+}
