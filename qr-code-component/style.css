@@ -17,6 +17,7 @@
 
   /* General */
   --default-border-radius: 1rem;
+  --body-padding: 1.5rem;
 }
 
 * {
@@ -41,7 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   
-  padding: 1.5rem;
+  padding: var(--body-padding);
 }
 
 .qrcode-card__container {
@@ -49,6 +50,10 @@ body {
   padding: 1rem;
   padding-bottom: 3rem;
   border-radius: var(--default-border-radius);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  min-width: calc(var(--mobile) - (var(--body-padding) * 2));
+  max-width: var(--mobile);
 }
 
 .qrcode-card__container img {
