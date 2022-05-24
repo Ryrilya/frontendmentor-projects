@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --mobile: 375px;
+  --desktop: 1440px;
+
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+
+  --body-fs: 18px;
+  --default-ff: 'Kumbh Sans', sans-serif;
+
+  --base-size: 1rem;
+  --card-box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: var(--body-fs);
+  font-family: var(--default-ff);
+}
+
+body {
+  background-color: var(--dark-cyan);
+  background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-repeat: no-repeat;
+
+  display: grid;
+  place-items: center;
+  color: var(--dark-gray);
+}
+
+/* Profile card */
+.profile-card {
+  min-width: var(--mobile);
+  max-width: calc(var(--mobile) - (var(--base-size) * 2.5));
+  background-color: var(--white);
+  border-radius: var(--base-size);
+  box-shadow: var(--card-box-shadow);
+}
+
+.profile-card__header {
+  border-top-left-radius: var(--base-size);
+  border-top-right-radius: var(--base-size);
+  background-image: url('images/bg-pattern-card.svg');
+  height: 20vh;
+}
+
+.profile-card__content {
+  position: relative;
+}
+
+.profile-card__avatar {
+  position: absolute;
+  margin: auto;
+  top: calc((var(--base-size) * 3) * -1);
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+}
+
+.profile-card__main-info {
+  padding-top: calc(var(--base-size) * 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--base-size) / 2);
+}
+
+.profile-card__name-and-age {
+  display: flex;
+  gap: calc(var(--base-size) / 2);
+  text-transform: capitalize;
+}
+
+.profile-card__name,
+.profile-card__stat-num {
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.profile-card__city {
+  text-transform: capitalize;
+  font-size: calc(var(--body-fs) * 0.8);
+}
+
+.profile-card__stats {
+  margin-top: var(--base-size);
+  padding: var(--base-size) 0;
+  border-top: 1px solid hsl(0, 0%, 90%);
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+}
+
+.profile-card__stat {
+  text-align: center;
+}
+
+.profile-card__stat-num {
+  text-transform: uppercase;
+}
+
+.profile-card__stat-label {
+  font-size: calc(var(--body-fs) * .6);
+  text-transform: capitalize;
+  letter-spacing: .2ch;
+  margin-top: calc(var(--base-size) * 0.2)
+}
